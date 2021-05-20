@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="Bootstrapt1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body>
+<body class="Login-sayfası">
     <script src="https://code.jquery.com/jquery-2.2.4.js"
     integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 <script src="bootstrapt1/js/bootstrap.js"></script>
 <nav class="navbar navbar-default syfa">
     <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
+    
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -25,7 +25,7 @@
             <a class="navbar-brand" href="index.html">Ebubekir Mert</a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
+ 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li ><a href="index.html">Anasayfa <span class="sr-only">(current)</span></a></li>
@@ -40,21 +40,19 @@
             <ul class="nav navbar-nav navbar-right">
                 <li ><a href="Login.html">Giriş <span class="sr-only">(current)</span></a></li>
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-<h2>WebmasterTakimi.com</h2>
-  <div class="outer-box">
-    <div class="login-box">
-      <h4 class="login-text">Giriş</h4>
-      <center>
-      <input placeholder="Kullanıcı Adı">
-      <input placeholder="Şifre">
-
-      <button id="btn-login">Giriş Yap</button>
-      <button id="btn-forgot">Şifremi unuttum!</button>
-      </center>
+        </div>
     </div>
-  </div>
+</nav>
+<main class="login text-center">
+    <form action="LOGİN.php" method="GET" >
+           <h1 class="h3 mb-3">Hesabınızı Girin</h1>
+           <input type="text" class="form-control" name="email" id="email" placeholder="E-posta" required autofocus>
+           <input type="password" class="form-control" placeholder="Şifre" name="sifre" id="sifre" required>
+           <div class="mb-3">
+               <input type="checkbox" class="remember-me">Beni Hatırla
+           </div>
+           <button class="w-100 btn btn-lg btn-danger">Giriş Yapın</button>
+    </form>
+</main>
 </body>
 </html>
