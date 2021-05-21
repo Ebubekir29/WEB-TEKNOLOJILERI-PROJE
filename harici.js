@@ -13,3 +13,5 @@ alert("Geçersiz cinnsiyet seçimi");
     if((document.getElementById("hobi").checked))
     alert("geçersiz");
 	}
+
+

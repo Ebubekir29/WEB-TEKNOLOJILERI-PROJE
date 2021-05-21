@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş</title>
+    <link rel="stylesheet" href="Bootstrapt1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="Bootstrapt1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="harici.js"></script>
+	<!--------------------------------->
+	<title>Web Teknoloji Projesi</title>
+
+</head>
+
+<body>
+	<script src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="bootstrapt1/js/bootstrap.js"></script>
+
+<nav class="navbar navbar-default syfa">
+    <div class="container-fluid">
+    
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <a class="navbar-brand" href="index.html">Ebubekir Mert</a>
+        </div>
+
+ 
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="index.html">Anasayfa <span class="sr-only">(current)</span></a></li>
+                <li ><a href="hakkımda.html">Hakkımda<span class="sr-only">(current)</span></a></li>
+                <li ><a href="Özgeçmiş.html">Özgeçmiş <span class="sr-only">(current)</span></a></li>
+                <li ><a href="Şehrim.html">Şehrim <span class="sr-only">(current)</span></a></li>
+                <li><a href="Takımım.html">Takımım <span class="sr-only">(current)</span></a></li>
+                <li ><a href="İlgiAlanım.html">İlgi Alanım <span class="sr-only">(current)</span></a></li>
+                <li ><a href="İletişim.html">İletişim <span class="sr-only">(current)</span></a></li>
+               
+            </ul>          
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a href="Login.html">Giriş <span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+	<header>
+
+		<div class="bg-info text-light jumbotron balikcilar-jumbotron">
+
+			<div class="container">
+
+				<div class="col-md-6 px-0 ilet">
+					<h1 class="display-4 font-italic" style="color: white;">
+						Başarılı!!
+					</h1>
+				</div>
+
+			</div>
+
+		</div>
+
+	</header>
+	
+	<main>
+
+		<div class="container">
+			
+			<div class="row">
+				<script type="text/javascript">
+
+					function getParameterByName(name, url) 
+					{
+		            	if (!url) url = window.location.href;
+    		       		name = name.replace(/[\[\]]/g, '\\$&');
+        		    	var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            		    	results = regex.exec(url);
+           				if (!results) return null;
+           				if (!results[2]) return '';
+           				return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        			}
+
+  				    var name = getParameterByName('name');
+  				    var email = getParameterByName('email');	
+  				    var message = getParameterByName('message');
+					var sehir = getParameterByName("sehir");
+					var hobi = getParameterByName("hobi");
+					var insan = getParameterByName("insan");
+
+				</script>
+
+				<table class="table">
+						<thead class="table-info">
+							<tr>
+								<th>Başarılı Bir şekilde Gönderdiniz </th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>İsminiz</td>
+								<td>
+									<script>document.write(name);
+									</script>
+								</td>
+							</tr>
+	
+							<tr>
+								<td>E-Mail</td>
+								<td>
+									<script>document.write(email);
+									</script>
+								</td>
+							</tr>
+	
+							<tr>
+								<td>Şehir</td>
+								<td>
+									<script>document.write(sehir);
+									</script>
+								</td>
+							</tr>
+							<tr>
+								<td>Hobiler</td>
+								<td>
+									<script>
+										
+									document.write(hobi);
+									
+									</script>
+									
+								</td>
+							</tr>
+							<tr>
+								<td>Cinsiyet</td>
+								<td>
+									<script>document.write(insan);
+									</script>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Mesajınız</td>
+								<td>
+									<script>document.write(message);
+									</script>
+								</td>
+							</tr>
+	
+						</tbody>
+					
+				</table>	
+
+
+			</div>
+
+		</div>
+
+	</main>
+
+
+	<footer class="alt_alan">
+		<h4 class="alt_alan_baslik">Sosyal Medya Hesaplarım</h4>
+	
+		<div class="wrapper">
+			<a target="_blank" href="https://www.facebook.com/ebubekir.mert.33/"><i class="fa fa-3x fa-facebook-square"></i></a>
+			<a target="_blank" href="https://www.instagram.com/ebubekir_mert/"><i class="fa fa-3x fa-instagram"></i></a>
+			<a target="_blank" href="https://twitter.com/Ebubekir_mert29"><i class="fa fa-3x fa-twitter-square"></i></a>
+		 </div>
+	</footer>
+
+	<!-- BOOTSTRAP -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<!-- JAVASCRIPT -->
+	
+</body>
+
+</html>

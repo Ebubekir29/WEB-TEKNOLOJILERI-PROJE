@@ -428,7 +428,12 @@ font-size: 19px;
 .İletişim{
   background-color: aqua;
 }
+/*İlet.html*/
+.balikcilar-jumbotron .container .ilet{
+  background-color: red;
+}
 /*Login*/
+/*
 .Login-sayfası{
   background-color: gray;
 padding: 0px;
@@ -459,4 +464,31 @@ padding: 0px;
 .login input{
   margin: 10px;
 }
-  
+ */
+ .giriş{
+   background-color: red;
+ }
+ .giriş .Ekran{
+   color: white;
+ }
+ .forms{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+ }
+ .forms .EMAİL{
+   font-size: 20px;
+ }
+ .forms .sifre{
+   font-size: 20px;
+ }
+ .forms .form-group{
+   width: 300px;
+ }
+ .site_giris{
+   background-color: red;
+ }
+ .site_giris .asdf{
+   font-size: 30px;
+ }
