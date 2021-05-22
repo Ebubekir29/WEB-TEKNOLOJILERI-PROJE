@@ -45,7 +45,7 @@
 
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="Login.html">Giriş <span class="sr-only">(current)</span></a></li>
+				<li><a href="giris.html">Giriş <span class="sr-only">(current)</span></a></li>
 			</ul>
 		</div>
 	</div>
@@ -57,26 +57,25 @@
 			<div class="container">
 
 			<?php 
-
+                error_reporting(0);
                 include("kullanicilar.php");
 
-
-               if (($_POST["email"] == $Email) and ($_POST["password"] == $Şifre))
-                {
-                  $_SESSION["login"] = "true";
-                  $_SESSION["user"] = $Email;
-                  $_SESSION["pass"] = $Şifre;
-
-                  echo("<mark>SİTEYE HOŞGELDİNİZ</mark>".$Şifre);
-
-                }
-
-                else 
-                {
-		           echo "Kullancı Adı veya Şifre Yanlış.<br>";
-	        	   echo "TEKRAR DENEYİN!!!";
-		           header("Refresh: 1; url=Login.php");
-                }
+				if (($_POST["email"] == $Email) and ($_POST["password"] == $Şifre))
+				{
+			       $_SESSION["Login"] = "true";
+			       $_SESSION["Email"] = $Email;
+			       $_SESSION["Şifre"] = $Şifre;
+			
+			       echo("<h1><mark>HOŞGELDİNİZ $Şifre </mark></h1>");
+			
+				}
+			
+				else 
+				{
+			            echo "<h2><mark>Kullancı Adı veya Şifre Yanlış.</mark></h2><br>";
+			            echo "<h2><mark>TEKRAR DENEYİN!!!</mark></h2>";
+			            header("Refresh: 2; url=giris.html");
+			    }
 
             ?>
 
