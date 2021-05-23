@@ -1,128 +1,134 @@
-<!DOCTYPE html>
-<html>
+<html lang="tr">
 
 <head>
-
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>İletişim</title>
+
+	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="Bootstrapt1/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="Bootstrapt1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<script src="harici.js"></script>
 
+	<!-- Css -->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/fontawesome.css">
+	<link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/fontawesome.min.css">
+	<title>Anasayfa</title>
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-2.2.4.js"
-    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-<script src="bootstrapt1/js/bootstrap.js"></script>
-<nav class="navbar navbar-default syfa">
-    <div class="container-fluid">
+	<!-- Javascript -->
+	<script src="https://code.jquery.com/jquery-2.2.4.js"
+		integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+	<script src="bootstrapt1/js/bootstrap.js"></script>
 
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Ebubekir Mert</a>
-        </div>
+	<!-- Mobil Uyumluluk için nav etiketleri kullanıldı -->
+	<nav class="navbar navbar-default syfa">
+		<div class="container-fluid">
+			<!-- Menü elemanları buranın içinde olacak-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span> <!-- Mobil uyumlu olması için buton-->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Ebubekir Mert</a>
+			</div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Anasayfa <span class="sr-only">(current)</span></a></li>
-                <li><a href="hakkımda.html">Hakkımda<span class="sr-only">(current)</span></a></li>
-                <li><a href="Özgeçmiş.html">Özgeçmiş <span class="sr-only">(current)</span></a></li>
-                <li><a href="Şehrim.html">Şehrim <span class="sr-only">(current)</span></a></li>
-                <li><a href="Takımım.html">Takımım <span class="sr-only">(current)</span></a></li>
-                <li><a href="İlgiAlanım.html">İlgi Alanım <span class="sr-only">(current)</span></a></li>
-                <li><a href="İletişim.html">İletişim <span class="sr-only">(current)</span></a></li>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Anasayfa </a></li>
+					<li><a href="hakkımda.html">Hakkımda</a></li>
+					<li><a href="Özgeçmiş.html">Özgeçmiş</a></li>
+					<li><a href="Şehrim.html">Şehrim</a></li>
+					<li><a href="Takımım.html">Takımım</a></li>
+					<li><a href="İlgiAlanım.html">İlgi Alanım</a></li>
+					<li><a href="İletişim.html">İletişim</a></li>
 
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="giris.html">Giriş <span class="sr-only">(current)</span></a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="giris.html">Giriş</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	<header>
 
 		<div class="bg-danger text-primary Özgeçmiş">
-
 			<div class="container">
-
+				<!--özgeçmiş adında container kullanarak başlık oluşturdum-->
 				<div class="px-0">
-					<h1 class="display-4 font-italic baslik2">
+					<h1 class=" font-italic baslik2">
 						Özgeçmişim
 					</h1>
 				</div>
-
 			</div>
-
 		</div>
 
 	</header>
 
-	
+
 	<main>
-	
+
 		<div class="container bilgiler">
+			<!--Kendimin tanıtmadan önce img-fluid sınıfını kullanarak fotoğrafımı koydum-->
 			<img class="img-fluid" src="resimler/fotom.jpg" alt="Ebubekir Mert">
+<!--Table taglarını kullanarak kişisel bilgilerimi , Becerilerimi , Yabancı dil , Eğitim gibi bilgilerimi yazdım-->
+			<table class="table">
+				<thead class="table-info">
+					<tr>
+						<th>Kişisel Bilgiler</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>AD SOYAD :</td>
+						<td>EBUBEKİR MERT</td>
+					</tr>
+					<tr>
+						<td>ÖĞRENCİ NUMARAM :</td>
+						<td>G201210356</td>
+					</tr>
+					<tr>
+						<td>Email :</td>
+						<td>ebubekir.mert@ogr.sakarya.edu.tr</td>
+					</tr>
+					<tr>
+						<td>Tel No :</td>
+						<td>+90(535)374 73 29</td>
+					</tr>
+				</tbody>
+			</table>
 
-            <table class="table">
-               <thead class="table-info">
-                   <tr>
-                       <th>Kişisel Bilgiler</th>
-                   </tr>
-               </thead>
-               <tbody>
-                   <tr>
-                       <td>AD SOYAD :</td>
-                       <td>EBUBEKİR MERT</td>
-                   </tr>
-                   <tr>
-                       <td>ÖĞRENCİ NUMARAM :</td>
-                       <td>G201210356</td>
-                   </tr>
-                   <tr>
-                       <td>Email :</td>
-                       <td>ebubekir.mert@ogr.sakarya.edu.tr</td>
-                   </tr>
-                   <tr>
-                       <td>Tel No :</td>
-                       <td>+90(535)374 73 29</td>
-                   </tr>
-               </tbody>
-            </table>
-
-				<br>
+			<br>
 
 			<table class="table">
-					<thead class="table-info">
-						<tr>
-							<th>Becerilerim</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>C#, Başlangıç seviyesi</td>
-						</tr>
+				<thead class="table-info">
+					<tr>
+						<th>Becerilerim</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>C#, Başlangıç seviyesi</td>
+					</tr>
 
-						<tr>
-							<td>C++, Orta Seviye</td>
-						</tr>
+					<tr>
+						<td>C++, Orta Seviye</td>
+					</tr>
 
-						<tr>
-							<td>HTML, CSS, Orta Seviye</td>
-						</tr>
+					<tr>
+						<td>HTML, CSS, Orta Seviye</td>
+					</tr>
 
-					</tbody>
-			
+				</tbody>
+
 			</table>
 
 			<table class="table">
@@ -135,39 +141,41 @@
 
 					<tr>
 						<td>İngilizce</td>
-					</tr>	
+					</tr>
 
 				</tbody>
-		
-		</table>
+
+			</table>
 
 			<table class="table">
-					<thead class="table-info">
-						<tr>
-							<th>Eğitim</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Sakarya Üniversitesi, Bilgisayar ve Bilişim Bilimleri Fakültesi, Bilgisayar Mühendisliği, 1. Sınıf</td>
-						</tr>
+				<thead class="table-info">
+					<tr>
+						<th>Eğitim</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Sakarya Üniversitesi, Bilgisayar ve Bilişim Bilimleri Fakültesi, Bilgisayar Mühendisliği, 1.
+							Sınıf</td>
+					</tr>
 
-						<tr>
-							<td>Sultanbeyli Anadolu İmam Hatip Lisesi , MEZUN</td>
-						</tr>	
+					<tr>
+						<td>Sultanbeyli Anadolu İmam Hatip Lisesi , MEZUN</td>
+					</tr>
 
-					</tbody>
-			
-			</table>			
+				</tbody>
 
-			</div>
+			</table>
+
+		</div>
 
 		</div>
 
 	</main>
+	<!--Alt alan-->
 	<footer class="text-center aaa">
 		Web-Teknolojileri-Projesi © Ebubekir Mert 2021
-	  </footer>
+	</footer>
 
 	<!-- BOOTSTRAP -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

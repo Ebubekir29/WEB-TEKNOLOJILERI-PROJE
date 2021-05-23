@@ -1,54 +1,64 @@
 <html lang="tr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Şehrim</title>
-  <link rel="stylesheet" href="Bootstrapt1/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="Bootstrapt1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="Bootstrapt1/css/bootstrap-theme.min.css.map">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    	<!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Bootstrapt1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="Bootstrapt1/css/bootstrap.min.css">
+
+    	<!-- Css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    	<!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/fontawesome.min.css">
+    <title>Anasayfa</title>
 </head>
 
 <body>
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="bootstrapt1/js/bootstrap.js"></script>
 
-  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-    crossorigin="anonymous"></script>
-  <script src="bootstrapt1/js/bootstrap.js"></script>
-  <nav class="navbar navbar-default syfa">
-    <div class="container-fluid">
-  
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Ebubekir Mert</a>
-      </div>
+    <!-- Mobil Uyumluluk için nav etiketleri kullanıldı -->
+    <nav class="navbar navbar-default syfa">
+        <div class="container-fluid">  <!-- Menü elemanları buranın içinde olacak-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span> <!-- Mobil uyumlu olması için buton-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Ebubekir Mert</a>
+            </div>
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Anasayfa <span class="sr-only">(current)</span></a></li>
-          <li><a href="hakkımda.html">Hakkımda<span class="sr-only">(current)</span></a></li>
-          <li><a href="Özgeçmiş.html">Özgeçmiş <span class="sr-only">(current)</span></a></li>
-          <li><a href="Şehrim.html">Şehrim <span class="sr-only">(current)</span></a></li>
-          <li><a href="Takımım.html">Takımım <span class="sr-only">(current)</span></a></li>
-          <li><a href="İlgiAlanım.html">İlgi Alanım <span class="sr-only">(current)</span></a></li>
-          <li><a href="İletişim.html">İletişim <span class="sr-only">(current)</span></a></li>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Anasayfa </a></li>
+                    <li><a href="hakkımda.html">Hakkımda</a></li>
+                    <li><a href="Özgeçmiş.html">Özgeçmiş</a></li>
+                    <li><a href="Şehrim.html">Şehrim</a></li>
+                    <li><a href="Takımım.html">Takımım</a></li>
+                    <li><a href="İlgiAlanım.html">İlgi Alanım</a></li>
+                    <li><a href="İletişim.html">İletişim</a></li>
 
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="giris.html">Giriş <span class="sr-only">(current)</span></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="giris.html">Giriş</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
   <h2 class="header" id="asdf">GÜMÜŞHANE</h2>
+  <!--Şehrimin nufus dağılımını table taglarını kullanarak gösterdim-->
   <div style="overflow-x:auto;" class="sehir">
     <table>
       <tr>
@@ -92,6 +102,7 @@
       </tr>
     </table>
   </div>
+  <!--Alt kısma 4 resimli slider ekledim. Slider lara tıklandığında ilgili resme ait bilgiler link ile gidilmesini sağladım.-->
   <div class="ortala">
 
     <div id="slider" class="carousel slide" data-interval="1000">
@@ -100,28 +111,28 @@
 
         <div class="active item">
           <h1 id="yazi">KARACA MAĞARASI</h1>
-          <a href="#resim1" target="_parent"><img src="resimler/Karaca Mağarası.jpg" alt="Karaca Mağarası"
+          <a href="karaca.html" target="_blank"><img src="resimler/Karaca Mağarası.jpg" alt="Karaca Mağarası"
               title="Karaca Mağarası">
           </a>
         </div>
 
         <div class="item">
           <h1 id="yazi">TORUL CAM TERAS</h1>
-          <a href="#resim2" target="_parent"><img src="resimler/Torul Cam Teras.jpg" alt="Torul Cam Teras"
+          <a href="torul.html" target="_parent"><img src="resimler/Torul Cam Teras.jpg" alt="Torul Cam Teras"
               title="Torul Cam Teras">
           </a>
         </div>
 
         <div class="item">
           <h1 id="yazi">TOMARA ŞELALESİ</h1>
-          <a href="#resim3" target="_parent"><img src="resimler/Tomara Şelalesi.jpg" alt="Tomara Şelalesi"
+          <a href="tomara.html" target="_parent"><img src="resimler/Tomara Şelalesi.jpg" alt="Tomara Şelalesi"
               title="Tomara Şelalesi">
           </a>
         </div>
 
         <div class="item">
           <h1 id="yazi">LİMNİ GÖLÜ</h1>
-          <a href="#resim4" target="_parent"><img src="resimler/Limni Gölü.jpg" alt="Limni Gölü" title="Limni Gölü">
+          <a href="limni.html" target="_parent"><img src="resimler/Limni Gölü.jpg" alt="Limni Gölü" title="Limni Gölü">
           </a>
         </div>
 
@@ -146,71 +157,7 @@
       </div>
     </div>
   </div>
-
-  <div class="yazilar">
-    <img src="resimler/Karaca Mağarası.jpg" class="img-fluid" id="resim1" alt="Karaca Mağarası" title="Karaca Mağarası">
-    <p id="yazi2">Gümüşhane’nin turizmine büyük katkıları olan Karaca Mağarası, Torul ilçesinde bulunuyor olup aynı adını
-      aldığı Karaca Mahallesi’ne oldukça yakındır. Girişi bir insan girebilecek boyutta olup içeriği doğru gittikçe
-      genişleyen mağaranın toplam uzunluğu 256 metre olan mağara yatay bir yapıya sahiptir. Beş salondan meydan geliyor
-      olup hepsi birbiri ile bağlantılıdır.
-      <br>
-      Salonları birbirine kavuşturan mağara duvarları damlataş sütunlarından meydana gelmektedir. Karaca Mahallesi’nden
-      20 dakikalık bir yürüyüş yolculuğunun ardından rahat bir şekilde ulaşım
-      sağlayacağınız Karaca Mağarası, kışın sıcak yazın ise serin yapısıyla doğal klima özelliği ile özellikle astım
-      hastalarına iyi geldiği biliniyor. 12 ile 17 derece arasında değişen ısısı, %70 oranındaki nemi, polen ve
-      tozlardan arınmış kaliteli oksijeni ile hastaların çok daha kolay nefes almalarına olanak sağlamaktadır.
-      <br>
-      <strong>Konum:</strong> Ceb:li Köyü Yolu, 29800 Cebeli/Torul/Gümüşhane
-      <br>
-      <strong>Giriş Saati:</strong> 08:30-18:30
-      <br>
-      <strong>Telefon:</strong> 0456 626 50 70
-    </p>
-  </div>
-  <div class="yazilar">
-    <img src="resimler/Torul Cam Teras.jpg" class="img-fluid" id="resim2" alt="Torul Cam Teras" title="Torul Cam Teras">
-    <p id="yazi2">Orta Çağ’da inşa edildiği bilinen ve Fatih Sultan Mehmet’in zamanında ise topraklarına katıldığı
-      bilinen savunma ve gözetleme aması taşıyan Torul Kalesi’ne yakın mesafede ki zirve üzerine yapılan cam seyir
-      terası yerden 240 metrelik yüksekliği ile aynı anda 50 kişiyi taşıyabilen cam teras, 90 metrekarelik bir alandır.
-      Hem Türkiye’de ki örnekleri arasında en yükseklerden birisi hem de karayoluna 2 kilometrelik mesafesiyle en yakın
-      ve ulaşılabilir cam teraslardan biri olma niteliğine sahiptir. Gelenlerin karşılaştıkları manzara karşısında
-      büyüleniyor ve fotoğraf makinelerine sarılıyorlar adeta.
-      <br>
-      <strong>Konum:</strong> Kaledibi, Trabzon Gümüşhane Yolu, 29800 Torul/Gümüşhane
-    </p>
-  </div>
-  <div class="yazilar">
-    <img src="resimler/Tomara Şelalesi.jpg" class="img-fluid" id="resim3" alt="Tomara Şelalesi" title="Tomara Şelalesi">
-    <p id="yazi2">Gümüşhane‘nin Şiran ilçesine 14 kilometre uzaklıkta bulunan Tomara Şelalesi, Seydibaba Köyünde yer
-      almaktadır. Suları tepe yamaçtan kayalar arasından ve yer altından kaynayarak dikey şekilde akarak yatağını
-      oluşturmaktadır. En mühim özelliği ise hemen kaynağında oluşmasıdır. Bu noktadan çıkan su oldukça soğuktur.
-      Dar ve derin bir vadi içerisinden akışına devam eden şelalenin kış
-      aylarında suyu artmakta olup yaz aylarında ise sıcak havanın etkisiyle azalır fakat tamamen kesilmemektedir.
-      <br>
-      Burası her sene düzenlenen ve ilki 2009 senesinde yapılmaya başlanan Şiran Tomara Şelalesi Kültür ve Turizm
-      Festivali’ne ev sahipliği yapmaktadır.
-      <br><strong>Konum:</strong> Boğazyayla Köyü Yolu, 29700 Boğazyayla/Şiran/Gümüşhane
-      <br><strong>Giriş Saati:</strong> 09:00-21:00
-      <br><strong>Telefon:</strong> 0532 629 61 29
-    </p>
-
-  </div>
-  <div class="yazilar">
-    <img src="resimler/Limni Gölü.jpg" class="img-fluid" id="resim4" alt="Limni Gölü" title="Limni Gölü">
-    <p id="yazi2">Limni Gölü Tabiat Parkı, Gümüşhane’nin Torul ilçesindeki Zigana Köyü’nde bulunuyor olup Büründüğü
-      manzara ve ulaşım yollarının virajlı ancak oldukça düzgün oluşu kolaylık sağlar. 1721 rakıma sahip olan Saranoy
-      Yaylası’nda konumlanan bu göl, ilk etapta bir mesire alanı tescil edilmiştir sonrasında zaman içerisinde tabiat
-      parkı olarak kayıtlara geçmiştir. Şehirdeki önemli turizm alanı olan mesire alanında yapılan çevre düzenlemeleri
-      ile tesis, çocuk oyun alanları, kamelyalar, mesire ve bungalov konaklama seçenekleri gibi pek çok yer
-      yapılmıştır.Gümüşhane merkez ilçeye 60 kilometre uzaklıkta yer alan gölün çevresi yemyeşil bir dünyaya sahip olup
-      farklı bitki ve kuş türleri ile keyifli bir görselliğe sahiptir.
-      <br>
-      <strong>Konum:</strong> Saranoy Yaylası, 29800 Zigana Köyü /Torul/Gümüşhane
-      <br> <strong>Giriş Ücreti:</strong> Yetişkin 3,5 TL / İndirimli 1,5
-      <br> <strong>Giriş Saati:</strong> 08:00-18:00
-      <br> <strong>Telefon:</strong> 0456 629 10 04
-    </p>
-  </div>
+  
 </body>
 
 </html>

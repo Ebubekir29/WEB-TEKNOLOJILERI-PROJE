@@ -9,7 +9,7 @@
   width: 100%;
 }
 .container-fluid {
-  background-color: rgb(0, 162, 255);
+  background-color:rgb(233, 64, 64);
   border-radius: 0px;
   border-color: transparent;
   padding: 6px;
@@ -20,34 +20,34 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 25px;
   transition: color .2s linear;
-  color: black;
+  color: white;
 }
 .navbar-default .navbar-header a:hover{
-  color:white;
+  color:black;
 }
 .navbar-default .navbar-nav li a{
-color: red;
+color: white;
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: 20px;
 }
 .navbar-default .navbar-nav li a:hover{
-color: white;
+color: black;
 }
 .navbar-default .navbar-right li a{
   border-style: solid;
   border-color: white;
   border-width: 2px;
   border-radius: 20px;
-  color: red;
+  color: white;
 }
 
 
 /*Anasayfa*/
 .index{
-  background-color:lime;
+  background-color:rgb(226, 222, 222);
 }
 .sayfa{
-  background-color: turquoise;
+  background-color:slategrey;
 width: 100%;
 margin: 0px;
 padding: 0px;
@@ -63,9 +63,16 @@ padding: 0px;
   font-size: 15px;
 }
 .alt-bölüm{
-  background-color: red;
+  background-color: rgb(226, 222, 222);
   margin: 0px;
   padding: 0px;
+}
+.alt-bölüm .baba ul li{
+  background-color: slategrey;
+  color: white;
+}
+.alt-bölüm .alt_baslik{
+  color: red;
 }
 .alt-bölüm .ögrenimim{
   width: 100%;
@@ -90,25 +97,26 @@ padding: 0px;
 /*Hakkımda Sayfası*/
 /*section alanı*/
 .home-5-bg{
-  background-color: yellow;
+  background-color: rgb(226, 222, 222);
   display: flex;
   flex-direction: column;
 
 }
 .home-5-bg .container .hakkımda{
-  background-color: red;
+  
   align-items: center;
   display: flex;
   flex-direction: column;
-  color: white;
+  color:red;
 }
 .home-5-bg .container .yazı{
   font-size: 20px;
+  color: black;
 }
 /*alt alan*/
 .alt_alan{
   color: white;
-  background-color:lightslategrey;
+  background-color:rgb(233, 64, 64);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,8 +130,8 @@ padding: 0px;
 }
 .alt_alan .alt_alan_baslik{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 25px;
-  color: red;
+  font-size: 30px;
+  color: white;
 }
 .alt_alan .wrapper {
   display: inline-flex;
@@ -135,181 +143,24 @@ padding: 0px;
   transition: all ease-in-out 150ms;
 }
 .alt_alan .wrapper a:nth-child(1) {
-  color: #4867AA;
+  color: #3f729b;
 
 }
 .alt_alan .wrapper a:nth-child(2) {
-  color: #dd4b39;
+  color: #3f729b;
 }
 .alt_alan .wrapper a:nth-child(3) {
-  color: #1DA1F2;
+  color: #3f729b;
 }
 .alt_alan .wrapper i:hover {
   margin-top: -3px;
   text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
 }
 /*Özgeçmiş*/
-/*
-.özgeçmiş{
-  background-color: yellow;
-
-}
-.özgeçmiş #header{
-  margin: 0px;
-  background-color: red;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 50px;
-  padding: 10px;
-  width: 100%;
-}
-.özgeçmiş .sekil{
-  width: 50%;
-  height: 800px;
-  background-color:#3b5998;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  float: left;
-}
-.özgeçmiş .sekil .img-fluid{
-     width: 120px;
-    height: auto;
-    border-radius: 70px;
-    border-style: solid;
-    border-color: red;
-    border-width: 3px;
-    margin: 5px;
-}
-.özgeçmiş .sekil .isim{
-  font-family:Georgia, 'Times New Roman', Times, serif;  
-  font-size: 25px;
-  color: white;
-  margin:0;
-  padding: 0;
-  position: absolute;
-  margin-top: 2px;
-  position:absolute;
-  margin-top: 120px;
-}
-.özgeçmiş .sekil .isim2{
-  width: 100%;
-  height: 50px;
-font-family:Georgia, 'Times New Roman', Times, serif;  
-font-size: 25px;
-color: red;
-margin:40px;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-border-bottom: 3px solid red;
-}
-.özgeçmiş .kisisel table {
-  list-style-type: none;
-  font-size: 20px;  
-}
-.özgeçmiş .isim3{
-  width: 100%;
-  height: 50px;
-font-family:Georgia, 'Times New Roman', Times, serif;  
-font-size: 25px;
-color: red;
-margin:40px;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-border-bottom: 3px solid red;
-}
-.özgeçmiş .sekil .İletisim table{
-  font-size: 20px;
-  overflow: hidden;
-}
-.özgeçmiş .yanSayfa{
-  background-color: grey;
-  width: 50%;
-  height: 800px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  float: left;
-}
-.özgeçmiş .yanSayfa #Egitim{
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 75%;
-    border-radius: 30px;
-background-color: yellow;
-}
-.özgeçmiş .yanSayfa .bilgiEgitim table tr{
-    line-height: 30px;
-    font-size: 20px;
-color: white;
-}
-.özgeçmiş .yanSayfa .bilgiEgitim table tr th{
-    color: red;
-    padding: 15px;
-}
-.özgeçmiş .yanSayfa .yetenekİsmi{
-  margin: 10px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  border-radius: 20px;
-background-color: yellow;
-}
-
-.özgeçmiş .yanSayfa .Yetenekler ul li{
-  font-size: 15px;
-  list-style-type: none;
-  margin: 10px;
-  padding: 5px;
-  float: left;
-  border-style: solid;
-  border-color: black;
-  border-radius: 20px;
-  line-height: 15px;
-  color: white;
-  background-color: red;
-}
-.özgeçmiş .yanSayfa .Bligisayar{
-  margin: 10px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 75%;
-  border-radius: 30px;
-background-color: yellow;
-}
-.özgeçmiş .yanSayfa .dil ul li{
-  list-style-type: none;
-  margin: 10px;
-  padding: 7px;
-  float: left;
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: white;
-  background-color:red;
-  border-style: solid;
-  border-color: black;
-  border-radius: 20px;
-  line-height: 40px;
-}
-*/
 .Özgeçmiş .container .baslik2{
   font-size: 50px;
   text-align: center;
+  color: red;
 }
 .bilgiler .img-fluid{
   width: 120px;
@@ -333,16 +184,18 @@ background-color: yellow;
 .bilgiler table tbody tr td{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
-  color: blue;
+  color: black;
 }
 .aaa{
-  background-color: aqua;
+  background-color: rgb(226, 222, 222);
+  color: red;
+  font-size: 25px;
 }
-/*şehrim*/
+/*Şehrim*/
 
 .header{
-  color: black;
-  background-color: turquoise;
+  color: red;
+  background-color: rgb(226, 222, 222);
   text-align: center;
   padding-top: 0px;
   margin: 0px;
@@ -370,30 +223,29 @@ background-color: yellow;
   height: 400px;
 }
 #slider .carousel-inner #yazi{
-  color: darkblue;
+  color: red;
   text-align: center;
 }
-.yazilar{
-  padding-top: 30px;
-  width: 100%;
-  margin:0px;
-  float: left;
-}
+
 
 .yazilar .img-fluid{
-  float:left;
-padding:3px;
-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+padding:0px;
+width: 100%;
 height: 400px;
 }
 .yazilar #yazi2{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 19px;
   color:black;
+  margin: 10px;
+  padding: 10px;
 
 }
 tr:nth-child(even) {background-color: #f2f2f2;}
-/*Mirasımız*/
+/*Takımım*/
 .mt-3{
   width:100%;
   height: 100%;
@@ -432,31 +284,7 @@ font-size: 19px;
 .resim .text-justify{
   font-size: 20px;
 }
-/*Takımımız Sayfası*/
-/*
-.takım {
-  background-color: turquoise;
-  width: 100%;
-}
-.takım .list-group .text-orta{
-  margin:5px;
-  display: flex;
-  float: left;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.takım .list-group .list-group-item-heading{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
-  color: red;
-  text-align: center;
-}
-.takım .list-group .f3{
-  font-size: 30px;
-  color: black;
-}
-*/
+
 .cimbom{
   width: 100%;
   height: 400px;
@@ -484,50 +312,19 @@ font-size: 19px;
 
 /*İletişim Sayfası*/
 .İletişim{
-  background-color: aqua;
+  background-color: rgb(226, 222, 222);
 }
 /*İlet.html*/
 .balikcilar-jumbotron .container .ilet{
   background-color: red;
 }
-/*Login*/
-/*
-.Login-sayfası{
-  background-color: gray;
-padding: 0px;
-}
-.login{
-  padding: 40px 0 40px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 500px;
-  height: 400px;
-  margin: auto;
-  margin-top: 50px;
- background-color: black;
-}
-.login .form-control{
-  position: relative;
-  box-sizing: border-box;
-}
-.login form{
-  background-color: black;
-}
-.login h1{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  color: aqua;
-}
-.login input{
-  margin: 10px;
-}
- */
+
+/*Login sayfası*/
  .giriş{
-   background-color: red;
+   background-color: rgb(226, 222, 222);
  }
  .giriş .Ekran{
-   color: white;
+   color: red;
  }
  .forms{
    display: flex;
@@ -546,7 +343,7 @@ padding: 0px;
    width: 350px;
  }
  .site_giris{
-   background-color: red;
+   background-color: rgb(226, 222, 222);
  }
  .site_giris .asdf{
    font-size: 30px;
