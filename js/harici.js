@@ -1,5 +1,5 @@
 /*İletişim kısmı javascript kodları*/
-function control() {
+function control1() {
     var x = document.forms["Form"]["name"].value;
     if (x == "") {
         alert("İsim boş bırakılamaz!!!");
